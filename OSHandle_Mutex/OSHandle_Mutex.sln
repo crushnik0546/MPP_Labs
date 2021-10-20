@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex_user", "Mutex_user\Mutex_user.csproj", "{446CE2F8-BB15-49C7-9E01-52515CAAFB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSHandle_user", "OSHandle_user\OSHandle_user.csproj", "{B102C764-C103-4900-90D7-57048E0D5383}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{446CE2F8-BB15-49C7-9E01-52515CAAFB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446CE2F8-BB15-49C7-9E01-52515CAAFB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446CE2F8-BB15-49C7-9E01-52515CAAFB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446CE2F8-BB15-49C7-9E01-52515CAAFB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B102C764-C103-4900-90D7-57048E0D5383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B102C764-C103-4900-90D7-57048E0D5383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B102C764-C103-4900-90D7-57048E0D5383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B102C764-C103-4900-90D7-57048E0D5383}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {674BB64E-8C14-4468-B158-39A7EF85F26A}
+	EndGlobalSection
+EndGlobal

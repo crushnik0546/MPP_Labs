@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ThreadPool": {
+      "commandName": "Project",
+      "commandLineArgs": "D:/Anime/Manga D:/Anime/Test"
+    }
+  }
+}
