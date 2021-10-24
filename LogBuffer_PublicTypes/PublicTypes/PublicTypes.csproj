@@ -9,4 +9,8 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Program.cs~RFfce219.TMP" />
+  </ItemGroup>
+
 </Project>
