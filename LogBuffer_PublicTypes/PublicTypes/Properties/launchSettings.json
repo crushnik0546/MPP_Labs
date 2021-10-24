@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PublicTypes": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\SPP_Lab_Test\\TestApp.exe"
+    }
+  }
+}
