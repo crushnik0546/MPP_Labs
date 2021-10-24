@@ -2,7 +2,7 @@
   "profiles": {
     "PublicTypes": {
       "commandName": "Project",
-      "commandLineArgs": "D:\\SPP_Lab_Test\\TestApp.exe"
+      "commandLineArgs": "D:\\SPP_Lab_Test\\TestApp.dll"
     }
   }
 }

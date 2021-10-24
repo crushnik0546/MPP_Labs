@@ -9,15 +9,21 @@ namespace PublicTypes
     {
         private static Assembly asm = null;
         private static List<Type> publicTypes= null;
-        public static Dictionary<string, NamespaceInfo> nsTypes = new Dictionary<string, NamespaceInfo>();
+        public static SortedDictionary<string, NamespaceInfo> nsTypes = new SortedDictionary<string, NamespaceInfo>();
 
-        public static void Load(string assemblyPath)
+        public static bool Load(string assemblyPath)
         {
-            // переделать обработку ошибок
-
-            asm = Assembly.LoadFile(assemblyPath);
-            GetPublicTtypes();
-
+            try
+            {
+                asm = Assembly.LoadFile(assemblyPath);
+                GetPublicTtypes();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            
         }
 
         private static void GetPublicTtypes()
@@ -74,6 +80,26 @@ namespace PublicTypes
                     methods.Add((MethodInfo)member);
                 }
             }
+
+            fields.Sort(delegate (MemberInfo x, MemberInfo y)
+            {
+                return x.Name.CompareTo(y.Name);
+            });
+
+            properties.Sort(delegate (MemberInfo x, MemberInfo y)
+            {
+                return x.Name.CompareTo(y.Name);
+            });
+
+            constructors.Sort(delegate (ConstructorInfo x, ConstructorInfo y)
+            {
+                return x.Name.CompareTo(y.Name);
+            });
+
+            methods.Sort(delegate (MethodInfo x, MethodInfo y)
+            {
+                return x.Name.CompareTo(y.Name);
+            });
 
             StringBuilder result = new StringBuilder();
 
@@ -138,6 +164,16 @@ namespace PublicTypes
 
             foreach(var ns in nsTypes)
             {
+                ns.Value.classes.Sort(delegate (Type x, Type y)
+                {
+                    return x.Name.CompareTo(y.Name);
+                });
+
+                ns.Value.interfaces.Sort(delegate (Type x, Type y)
+                {
+                    return x.Name.CompareTo(y.Name);
+                });
+
                 result.AppendLine($"NAMESPACE: {ns.Key}");
 
                 if (ns.Value.interfaces.Count != 0)
