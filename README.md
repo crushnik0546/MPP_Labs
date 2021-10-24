@@ -26,7 +26,7 @@ Laboratory works on the Modern Programming Platforms
 - реализует метод Finalize для автоматического освобождения дескриптора;
 - реализует интерфейс IDisposable для принудительного освобождения дескриптора.
 
-#AssemblyLoad & Logger
+# AssemblyLoad & Logger
 
 Реализовать консольную программу на языке C#, которая:
 - принимает в параметре командной строки путь к сборке .NET (EXE- или DLL-файлу);
