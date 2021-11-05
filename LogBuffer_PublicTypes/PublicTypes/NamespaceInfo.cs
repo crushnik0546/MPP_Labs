@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Reflection;
 
 namespace PublicTypes
 {
@@ -15,7 +13,5 @@ namespace PublicTypes
             interfaces = new List<Type>();
             classes = new List<Type>();
         }
-
-        //public List<>
     }
 }

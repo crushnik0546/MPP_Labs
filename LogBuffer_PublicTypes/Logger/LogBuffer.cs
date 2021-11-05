@@ -80,7 +80,6 @@ namespace Logger
 
         public void Dispose()
         {
-            Console.WriteLine("Вызов деструктора");
             if (disposed) return;
 
             timerState = false;

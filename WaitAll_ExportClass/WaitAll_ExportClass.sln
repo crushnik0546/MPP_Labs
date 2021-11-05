@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel_WaitAll", "Parallel_WaitAll\Parallel_WaitAll.csproj", "{245EF559-DA97-4A7E-9092-194751999863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportClassAttribute", "..\ExportClassAttribute\ExportClassAttribute.csproj", "{06ACB3E0-AE2F-4CBC-9A95-60E90DC68832}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{245EF559-DA97-4A7E-9092-194751999863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245EF559-DA97-4A7E-9092-194751999863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245EF559-DA97-4A7E-9092-194751999863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245EF559-DA97-4A7E-9092-194751999863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06ACB3E0-AE2F-4CBC-9A95-60E90DC68832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06ACB3E0-AE2F-4CBC-9A95-60E90DC68832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06ACB3E0-AE2F-4CBC-9A95-60E90DC68832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06ACB3E0-AE2F-4CBC-9A95-60E90DC68832}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A0A7AEA-F656-4A64-A560-E76AA18EFB86}
+	EndGlobalSection
+EndGlobal

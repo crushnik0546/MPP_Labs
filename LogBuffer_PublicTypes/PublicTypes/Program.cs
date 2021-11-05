@@ -8,7 +8,8 @@ namespace PublicTypes
         {
             if (args.Length == 1)
             {
-                if (AssemblyInfo.Load(args[0]))
+                string ret = AssemblyInfo.Load(args[0]);
+                if (ret == "")
                 {
                     var publicTypes = AssemblyInfo.nsTypes;
                     string res = AssemblyInfo.GetPublicTypesInfo();
@@ -16,7 +17,7 @@ namespace PublicTypes
                 }
                 else
                 {
-                    Console.WriteLine("AssemblyInfo.Load Failed!");
+                    Console.WriteLine($"AssemblyInfo.Load Failed with ex: {ret}");
                 }
             } 
             else
