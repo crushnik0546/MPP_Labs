@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parallel_WaitAll", "Parallel_WaitAll\Parallel_WaitAll.csproj", "{245EF559-DA97-4A7E-9092-194751999863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportClassAttribute", "ExportClassAttribute\ExportClassAttribute.csproj", "{1202D0AA-3013-49D4-94E4-F651578A6642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExportClassAttribute", "ExportClassAttribute\ExportClassAttribute.csproj", "{1202D0AA-3013-49D4-94E4-F651578A6642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExportClassAttribute", "TestExportClassAttribute\TestExportClassAttribute.csproj", "{DC618740-4DC6-47F4-A74C-1D058FF2E5F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1202D0AA-3013-49D4-94E4-F651578A6642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1202D0AA-3013-49D4-94E4-F651578A6642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1202D0AA-3013-49D4-94E4-F651578A6642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC618740-4DC6-47F4-A74C-1D058FF2E5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC618740-4DC6-47F4-A74C-1D058FF2E5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC618740-4DC6-47F4-A74C-1D058FF2E5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC618740-4DC6-47F4-A74C-1D058FF2E5F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
