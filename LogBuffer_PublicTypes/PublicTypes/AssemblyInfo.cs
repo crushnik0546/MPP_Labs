@@ -11,17 +11,17 @@ namespace PublicTypes
         private static List<Type> publicTypes= null;
         public static SortedDictionary<string, NamespaceInfo> nsTypes = new SortedDictionary<string, NamespaceInfo>();
 
-        public static bool Load(string assemblyPath)
+        public static string Load(string assemblyPath)
         {
             try
             {
                 asm = Assembly.LoadFile(assemblyPath);
                 GetPublicTtypes();
-                return true;
+                return "";
             }
-            catch
+            catch (Exception e)
             {
-                return false;
+                return e.Message;
             }
             
         }

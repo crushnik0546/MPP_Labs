@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ExportClassAttribute": {
+      "commandName": "Project",
+      "commandLineArgs": "d:\\SPP_Lab_Test\\TestExportClassAttribute.dll"
+    }
+  }
+}
