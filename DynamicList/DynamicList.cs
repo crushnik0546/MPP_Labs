@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Collections;
 
-namespace DynamicLisDynamicListGenerictProj
+namespace DynamicListGeneric
 {
     public class DynamicList<T>: IEnumerable
     {
@@ -23,11 +23,21 @@ namespace DynamicLisDynamicListGenerictProj
             current = -1;
         }
 
+        public DynamicList(IEnumerable<T> array)
+        {
+            list = new T[0];
+            current = -1;
+            foreach(T item in array)
+            {
+                this.Add(item);
+            }
+        }
+
         public int Count
         {
             get
             {
-                return list.Length;
+                return current + 1;
             }
         }
 
@@ -53,7 +63,11 @@ namespace DynamicLisDynamicListGenerictProj
 
         public void Add(T item)
         {
-            if (current == list.Length - 1)
+            if (0 == list.Length)
+            {
+                Array.Resize<T>(ref list, 1);
+            }
+            else if (current == list.Length - 1)
             {
                 Array.Resize<T>(ref list, list.Length * 2);
             }
@@ -91,7 +105,10 @@ namespace DynamicLisDynamicListGenerictProj
 
         public IEnumerator GetEnumerator()
         {
-            return list.GetEnumerator();
+            for (int i = 0; i <= current; i++)
+            {
+                yield return list[i];
+            }
         }
     }
 }

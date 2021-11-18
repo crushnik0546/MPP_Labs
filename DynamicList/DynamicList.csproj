@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DynamicListEnumerator.cs~RF4cd7e0.TMP" />
+  </ItemGroup>
+
 </Project>
